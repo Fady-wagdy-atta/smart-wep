@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+        </style>
+</head>
+<body>
+    <button id="toggle-nav-btn">Menu</button>
+    <nav id="nav_bar">
+        <ul id="select_section"></ul>
+    </nav>
+    <div id="main">
+        <section id="section1" class="section1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam officia, quaerat non impedit voluptatibus eaque accusantium explicabo dolores illo laudantium saepe consequuntur ducimus, natus voluptatem quo facilis hic maxime atque?</p>
+            <img src="photo/Timeless JavaScript quirks_.jpeg" alt="meme">
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam officia, quaerat non impedit voluptatibus eaque accusantium explicabo dolores illo laudantium saepe consequuntur ducimus, natus voluptatem quo facilis hic maxime atque?</p>
+            <img src="photo/33 Dank Memes From All Across the Globe.jpeg" alt="meme">
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident fuga quibusdam ducimus inventore obcaecati cupiditate iusto, accusamus soluta iure aliquam voluptatibus dolor eaque. Delectus, nesciunt ducimus ad totam fugit sequi?</p>
+            <img src="photo/An apple a day keeps the doc-thor away.jpeg" alt="meme">
+        </section>
+        <section id="section4">
+            <h2>Section 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem molestias assumenda, quis cumque facilis alias quisquam, magnam repellat voluptatem iusto voluptate velit deserunt beatae rerum eos, vero deleniti error.</p>
+            <img src="photo/photto.jpeg" alt="meme">
+        </section>
+        <section id="comments" class="section">
+            <h2>Comments</h2>
+            <form id="comment-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="comment" name="comment" placeholder="Your Comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comments-list"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

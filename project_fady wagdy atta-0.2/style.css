@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav_bar {
+    background: #55AD9B;  
+    padding: 10px;
+    font-size: 30px; 
+    width: 200px; /* Set a fixed width for the navbar */
+    height: 100%; /* Make the navbar full height */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+body {
+    margin-right: 200px; 
+}
+
+#select_section {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#select_section li {
+    margin-bottom: 20px;
+}
+
+#select_section li a {
+    color: #F1F8E8;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#select_section li a:hover {
+    color: #1f4039;
+}
+
+#main {
+    font-size: 30px;
+    padding: 20px;
+}
+
+section {
+    background-color: #95D2B3;
+    height: auto;
+    margin: 3px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#comment {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.active-section {
+    border: 2px solid #480000;
+    background-color: #e0f7fa;
+}
+
+#select_section li a.active {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+#toggle-nav-btn {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 101;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #55AD9B;
+    color: #F1F8E8;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #nav_bar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none; /* Initially hide the nav bar on >768px screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        margin-right: 0;
+    }
+
+    #select_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #select_section li {
+        margin: 5px 0;
+    }
+
+    #select_section li a {
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main {
+        font-size: 24px;
+    }
+
+    section {
+        font-size: 18px;
+        padding: 10px;
+        background-color: #95D2B3;
+        height: auto;
+        margin: 3px;
+        margin-bottom: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section img {
+        margin: 10px 0 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input, form textarea {
+        margin-top: 5px;
+        padding: 10px; 
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #toggle-nav-btn {
+        display: block; /* Show the button on phone screens */
+    }
+}
+
